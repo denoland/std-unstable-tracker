@@ -13,6 +13,7 @@
     "jsr:@std/io@0.221": "0.221.0",
     "jsr:@std/path@1": "1.0.8",
     "jsr:@std/path@^1.0.7": "1.0.8",
+    "jsr:@std/path@^1.0.8": "1.0.8",
     "jsr:@std/semver@^1.0.3": "1.0.3",
     "jsr:@std/streams@0.221": "0.221.0"
   },
@@ -87,6 +88,7 @@
     "dependencies": [
       "jsr:@david/dax@0.42",
       "jsr:@std/assert@1",
+      "jsr:@std/path@^1.0.8",
       "jsr:@std/semver@^1.0.3"
     ]
   }

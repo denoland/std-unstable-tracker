@@ -2,151 +2,70 @@
   {
     "name": "@std/cache",
     "version": "0.1.3",
-    "exports": {
-      ".": "./mod.ts",
-      "./lru-cache": "./lru_cache.ts",
-      "./memoize": "./memoize.ts",
-      "./ttl-cache": "./ttl_cache.ts"
-    },
+    "exports": {},
     "path": "./cache",
     "startedAt": "2024-08-09T00:00:00.000Z"
   },
   {
     "name": "@std/cbor",
     "version": "0.1.2",
-    "exports": {
-      ".": "./mod.ts",
-      "./array-encoder-stream": "./array_encoder_stream.ts",
-      "./byte-encoder-stream": "./byte_encoder_stream.ts",
-      "./decode-cbor-sequence": "./decode_cbor_sequence.ts",
-      "./decode-cbor": "./decode_cbor.ts",
-      "./encode-cbor-sequence": "./encode_cbor_sequence.ts",
-      "./encode-cbor": "./encode_cbor.ts",
-      "./map-encoder-stream": "./map_encoder_stream.ts",
-      "./sequence-decoder-stream": "./sequence_decoder_stream.ts",
-      "./sequence-encoder-stream": "./sequence_encoder_stream.ts",
-      "./tag": "./tag.ts",
-      "./text-encoder-stream": "./text_encoder_stream.ts",
-      "./types": "./types.ts"
-    },
+    "exports": {},
     "path": "./cbor",
     "startedAt": "2024-10-10T00:00:00.000Z"
   },
   {
     "name": "@std/datetime",
     "version": "0.225.2",
-    "exports": {
-      ".": "./mod.ts",
-      "./constants": "./constants.ts",
-      "./day-of-year": "./day_of_year.ts",
-      "./difference": "./difference.ts",
-      "./format": "./format.ts",
-      "./is-leap": "./is_leap.ts",
-      "./parse": "./parse.ts",
-      "./week-of-year": "./week_of_year.ts"
-    },
+    "exports": {},
     "path": "./datetime",
     "startedAt": "2019-01-03T00:00:00.000Z"
   },
   {
     "name": "@std/dotenv",
     "version": "0.225.2",
-    "exports": {
-      ".": "./mod.ts",
-      "./load": "./load.ts",
-      "./parse": "./parse.ts",
-      "./stringify": "./stringify.ts"
-    },
+    "exports": {},
     "path": "./dotenv",
     "startedAt": "2022-02-23T00:00:00.000Z"
   },
   {
     "name": "@std/ini",
     "version": "1.0.0-rc.5",
-    "exports": {
-      ".": "./mod.ts",
-      "./parse": "./parse.ts",
-      "./stringify": "./stringify.ts"
-    },
+    "exports": {},
     "path": "./ini",
     "startedAt": "2023-12-04T00:00:00.000Z"
   },
   {
     "name": "@std/io",
     "version": "0.225.0",
-    "exports": {
-      ".": "./mod.ts",
-      "./buffer": "./buffer.ts",
-      "./copy": "./copy.ts",
-      "./iterate-reader": "./iterate_reader.ts",
-      "./read-all": "./read_all.ts",
-      "./reader-from-stream-reader": "./reader_from_stream_reader.ts",
-      "./to-readable-stream": "./to_readable_stream.ts",
-      "./to-writable-stream": "./to_writable_stream.ts",
-      "./types": "./types.ts",
-      "./write-all": "./write_all.ts"
-    },
+    "exports": {},
     "path": "./io",
     "startedAt": "2019-01-12T00:00:00.000Z"
   },
   {
     "name": "@std/log",
     "version": "0.224.11",
-    "exports": {
-      ".": "./mod.ts",
-      "./base-handler": "./base_handler.ts",
-      "./console-handler": "./console_handler.ts",
-      "./critical": "./critical.ts",
-      "./debug": "./debug.ts",
-      "./error": "./error.ts",
-      "./file-handler": "./file_handler.ts",
-      "./formatters": "./formatters.ts",
-      "./get-logger": "./get_logger.ts",
-      "./info": "./info.ts",
-      "./levels": "./levels.ts",
-      "./logger": "./logger.ts",
-      "./rotating-file-handler": "./rotating_file_handler.ts",
-      "./setup": "./setup.ts",
-      "./warn": "./warn.ts"
-    },
+    "exports": {},
     "path": "./log",
     "startedAt": "2019-01-12T00:00:00.000Z"
   },
   {
     "name": "@std/random",
     "version": "0.1.0",
-    "exports": {
-      ".": "./mod.ts",
-      "./between": "./between.ts",
-      "./integer-between": "./integer_between.ts",
-      "./sample": "./sample.ts",
-      "./seeded": "./seeded.ts",
-      "./shuffle": "./shuffle.ts"
-    },
+    "exports": {},
     "path": "./random",
     "startedAt": "2024-09-05T00:00:00.000Z"
   },
   {
     "name": "@std/tar",
     "version": "0.1.4",
-    "exports": {
-      ".": "./mod.ts",
-      "./tar-stream": "./tar_stream.ts",
-      "./untar-stream": "./untar_stream.ts"
-    },
+    "exports": {},
     "path": "./tar",
     "startedAt": "2024-09-04T00:00:00.000Z"
   },
   {
     "name": "@std/webgpu",
     "version": "0.224.7",
-    "exports": {
-      ".": "./mod.ts",
-      "./create-capture": "./create_capture.ts",
-      "./describe-texture-format": "./describe_texture_format.ts",
-      "./row-padding": "./row_padding.ts",
-      "./texture-with-data": "./texture_with_data.ts"
-    },
+    "exports": {},
     "path": "./webgpu",
     "startedAt": "2023-12-12T00:00:00.000Z"
   }
