@@ -27,3 +27,7 @@ export async function getWorkspacePackageConfigs(): Promise<PackageConfig[]> {
   }
   return configs;
 }
+
+export function formatDate(date: Date): string {
+  return date.toISOString().split("T")[0];
+}
