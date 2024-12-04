@@ -17,10 +17,12 @@ function unstablePackageTable() {
   let i = 0;
   for (const pkg of packages) {
     i++;
+    const { name } = pkg;
+    const pkgName = `[${name}](https://jsr.io/${name})`;
     const d = new Date(pkg.startedAt);
     const date = formatDate(d);
     console.log(
-      `| ${i} | ${pkg.name} | ${pkg.version} | ${date} | ${age(d)} |`,
+      `| ${i} | ${pkgName} | ${pkg.version} | ${date} | ${age(d)} |`,
     );
   }
 }
@@ -34,12 +36,17 @@ function unstableApiTable() {
   let i = 0;
   for (const api of apis) {
     i++;
+    const name = api.package;
     const specifier = api.specifier.split("/");
     const path = specifier.pop();
     const pkg = specifier.join("/");
+    const pkgUrl = pkg.replace(name + "/", name + "/doc/");
+    const pkgLink = `[${pkg}](https://jsr.io/${pkgUrl})`;
+    const pathUrl = api.specifier.replace(name, name + "/doc");
+    const pathLink = `[${path}](https://jsr.io/${pathUrl})`;
     const d = new Date(api.startedAt);
     const date = formatDate(d);
-    console.log(`| ${i} | ${pkg} | ${path} | ${date} | ${age(d)} |`);
+    console.log(`| ${i} | ${pkgLink} | ${pathLink} | ${date} | ${age(d)} |`);
   }
 }
 
