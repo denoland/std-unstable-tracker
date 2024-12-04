@@ -1,7 +1,8 @@
 {
   "tasks": {
-    "a": "deno -A get_unstable_apis.ts",
-    "p": "deno -A get_unstable_packages.ts"
+    "apis": "deno -A get_unstable_apis.ts",
+    "packages": "deno -A get_unstable_packages.ts",
+    "build": "deno task apis && deno task packages"
   },
   "imports": {
     "@david/dax": "jsr:@david/dax@^0.42.0",
