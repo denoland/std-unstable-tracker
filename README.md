@@ -2,74 +2,74 @@ utils for tracking unstable APIs in denoland/std
 
 ### Unstable packages
 
-| Package       | Current version | Started at |
-| ------------- | --------------- | ---------- |
-| @std/datetime | 0.225.2         | 2019-01-03 |
-| @std/io       | 0.225.0         | 2019-01-12 |
-| @std/log      | 0.224.11        | 2019-01-12 |
-| @std/dotenv   | 0.225.2         | 2022-02-23 |
-| @std/ini      | 1.0.0-rc.5      | 2023-12-04 |
-| @std/webgpu   | 0.224.7         | 2023-12-12 |
-| @std/cache    | 0.1.3           | 2024-08-09 |
-| @std/tar      | 0.1.4           | 2024-09-04 |
-| @std/random   | 0.1.0           | 2024-09-05 |
-| @std/cbor     | 0.1.2           | 2024-10-10 |
+| No | Package       | Current version | Started at |
+| -- | ------------- | --------------- | ---------- |
+| 1  | @std/datetime | 0.225.2         | 2019-01-03 |
+| 2  | @std/io       | 0.225.0         | 2019-01-12 |
+| 3  | @std/log      | 0.224.11        | 2019-01-12 |
+| 4  | @std/dotenv   | 0.225.2         | 2022-02-23 |
+| 5  | @std/ini      | 1.0.0-rc.5      | 2023-12-04 |
+| 6  | @std/webgpu   | 0.224.7         | 2023-12-12 |
+| 7  | @std/cache    | 0.1.3           | 2024-08-09 |
+| 8  | @std/tar      | 0.1.4           | 2024-09-04 |
+| 9  | @std/random   | 0.1.0           | 2024-09-05 |
+| 10 | @std/cbor     | 0.1.2           | 2024-10-10 |
 
 ### Unstable APIs
 
-| Package              | Specifier                             | Started at |
-| -------------------- | ------------------------------------- | ---------- |
-| @std/http            | unstable-method                       | 2023-10-13 |
-| @std/http            | unstable-signed-cookie                | 2023-12-13 |
-| @std/assert          | unstable-never                        | 2024-09-11 |
-| @std/http            | unstable-header                       | 2024-09-11 |
-| @std/uuid            | unstable-v7                           | 2024-09-11 |
-| @std/cli             | unstable-spinner                      | 2024-09-12 |
-| @std/data-structures | unstable-bidirectional-map            | 2024-09-12 |
-| @std/encoding        | unstable-base32-stream                | 2024-09-12 |
-| @std/encoding        | unstable-base32hex                    | 2024-09-12 |
-| @std/encoding        | unstable-base32hex-stream             | 2024-09-12 |
-| @std/encoding        | unstable-base64-stream                | 2024-09-12 |
-| @std/encoding        | unstable-base64url-stream             | 2024-09-12 |
-| @std/encoding        | unstable-hex-stream                   | 2024-09-12 |
-| @std/front-matter    | unstable-yaml                         | 2024-09-12 |
-| @std/html            | unstable-is-valid-custom-element-name | 2024-09-12 |
-| @std/http            | unstable-route                        | 2024-09-12 |
-| @std/net             | unstable-get-network-address          | 2024-09-12 |
-| @std/path/posix      | unstable-basename                     | 2024-09-12 |
-| @std/path/posix      | unstable-dirname                      | 2024-09-12 |
-| @std/path/posix      | unstable-extname                      | 2024-09-12 |
-| @std/path/posix      | unstable-join                         | 2024-09-12 |
-| @std/path/posix      | unstable-normalize                    | 2024-09-12 |
-| @std/path            | unstable-basename                     | 2024-09-12 |
-| @std/path            | unstable-dirname                      | 2024-09-12 |
-| @std/path            | unstable-extname                      | 2024-09-12 |
-| @std/path            | unstable-join                         | 2024-09-12 |
-| @std/path            | unstable-normalize                    | 2024-09-12 |
-| @std/path/windows    | unstable-basename                     | 2024-09-12 |
-| @std/path/windows    | unstable-dirname                      | 2024-09-12 |
-| @std/path/windows    | unstable-extname                      | 2024-09-12 |
-| @std/path/windows    | unstable-join                         | 2024-09-12 |
-| @std/path/windows    | unstable-normalize                    | 2024-09-12 |
-| @std/streams         | unstable-fixed-chunk-stream           | 2024-09-12 |
-| @std/streams         | unstable-to-lines                     | 2024-09-12 |
-| @std/text            | unstable-slugify                      | 2024-09-12 |
-| @std/text            | unstable-to-constant-case             | 2024-09-12 |
-| @std/streams         | unstable-to-bytes                     | 2024-09-18 |
-| @std/collections     | unstable-take-while                   | 2024-09-20 |
-| @std/collections     | unstable-chunk                        | 2024-09-23 |
-| @std/collections     | unstable-sort-by                      | 2024-09-23 |
-| @std/collections     | unstable-sample                       | 2024-09-24 |
-| @std/collections     | unstable-without-all                  | 2024-09-24 |
-| @std/collections     | unstable-drop-last-while              | 2024-10-02 |
-| @std/async           | unstable-mux-async-iterator           | 2024-10-08 |
-| @std/collections     | unstable-intersect                    | 2024-10-08 |
-| @std/collections     | unstable-drop-while                   | 2024-10-09 |
-| @std/collections     | unstable-take-last-while              | 2024-10-09 |
-| @std/streams         | unstable-to-byte-stream               | 2024-10-09 |
-| @std/collections     | unstable-sliding-windows              | 2024-10-16 |
-| @std/async           | unstable-throttle                     | 2024-10-21 |
-| @std/testing         | unstable-types                        | 2024-10-29 |
-| @std/testing         | unstable-stub                         | 2024-10-31 |
-| @std/csv             | unstable-stringify                    | 2024-11-14 |
-| @std/async           | unstable-retry                        | 2024-11-22 |
+| No | Package              | Path                                  | Started at |
+| -- | -------------------- | ------------------------------------- | ---------- |
+| 1  | @std/http            | unstable-method                       | 2023-10-13 |
+| 2  | @std/http            | unstable-signed-cookie                | 2023-12-13 |
+| 3  | @std/assert          | unstable-never                        | 2024-09-11 |
+| 4  | @std/http            | unstable-header                       | 2024-09-11 |
+| 5  | @std/uuid            | unstable-v7                           | 2024-09-11 |
+| 6  | @std/cli             | unstable-spinner                      | 2024-09-12 |
+| 7  | @std/data-structures | unstable-bidirectional-map            | 2024-09-12 |
+| 8  | @std/encoding        | unstable-base32-stream                | 2024-09-12 |
+| 9  | @std/encoding        | unstable-base32hex                    | 2024-09-12 |
+| 10 | @std/encoding        | unstable-base32hex-stream             | 2024-09-12 |
+| 11 | @std/encoding        | unstable-base64-stream                | 2024-09-12 |
+| 12 | @std/encoding        | unstable-base64url-stream             | 2024-09-12 |
+| 13 | @std/encoding        | unstable-hex-stream                   | 2024-09-12 |
+| 14 | @std/front-matter    | unstable-yaml                         | 2024-09-12 |
+| 15 | @std/html            | unstable-is-valid-custom-element-name | 2024-09-12 |
+| 16 | @std/http            | unstable-route                        | 2024-09-12 |
+| 17 | @std/net             | unstable-get-network-address          | 2024-09-12 |
+| 18 | @std/path/posix      | unstable-basename                     | 2024-09-12 |
+| 19 | @std/path/posix      | unstable-dirname                      | 2024-09-12 |
+| 20 | @std/path/posix      | unstable-extname                      | 2024-09-12 |
+| 21 | @std/path/posix      | unstable-join                         | 2024-09-12 |
+| 22 | @std/path/posix      | unstable-normalize                    | 2024-09-12 |
+| 23 | @std/path            | unstable-basename                     | 2024-09-12 |
+| 24 | @std/path            | unstable-dirname                      | 2024-09-12 |
+| 25 | @std/path            | unstable-extname                      | 2024-09-12 |
+| 26 | @std/path            | unstable-join                         | 2024-09-12 |
+| 27 | @std/path            | unstable-normalize                    | 2024-09-12 |
+| 28 | @std/path/windows    | unstable-basename                     | 2024-09-12 |
+| 29 | @std/path/windows    | unstable-dirname                      | 2024-09-12 |
+| 30 | @std/path/windows    | unstable-extname                      | 2024-09-12 |
+| 31 | @std/path/windows    | unstable-join                         | 2024-09-12 |
+| 32 | @std/path/windows    | unstable-normalize                    | 2024-09-12 |
+| 33 | @std/streams         | unstable-fixed-chunk-stream           | 2024-09-12 |
+| 34 | @std/streams         | unstable-to-lines                     | 2024-09-12 |
+| 35 | @std/text            | unstable-slugify                      | 2024-09-12 |
+| 36 | @std/text            | unstable-to-constant-case             | 2024-09-12 |
+| 37 | @std/streams         | unstable-to-bytes                     | 2024-09-18 |
+| 38 | @std/collections     | unstable-take-while                   | 2024-09-20 |
+| 39 | @std/collections     | unstable-chunk                        | 2024-09-23 |
+| 40 | @std/collections     | unstable-sort-by                      | 2024-09-23 |
+| 41 | @std/collections     | unstable-sample                       | 2024-09-24 |
+| 42 | @std/collections     | unstable-without-all                  | 2024-09-24 |
+| 43 | @std/collections     | unstable-drop-last-while              | 2024-10-02 |
+| 44 | @std/async           | unstable-mux-async-iterator           | 2024-10-08 |
+| 45 | @std/collections     | unstable-intersect                    | 2024-10-08 |
+| 46 | @std/collections     | unstable-drop-while                   | 2024-10-09 |
+| 47 | @std/collections     | unstable-take-last-while              | 2024-10-09 |
+| 48 | @std/streams         | unstable-to-byte-stream               | 2024-10-09 |
+| 49 | @std/collections     | unstable-sliding-windows              | 2024-10-16 |
+| 50 | @std/async           | unstable-throttle                     | 2024-10-21 |
+| 51 | @std/testing         | unstable-types                        | 2024-10-29 |
+| 52 | @std/testing         | unstable-stub                         | 2024-10-31 |
+| 53 | @std/csv             | unstable-stringify                    | 2024-11-14 |
+| 54 | @std/async           | unstable-retry                        | 2024-11-22 |

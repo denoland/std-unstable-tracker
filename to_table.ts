@@ -7,11 +7,13 @@ function unstablePackageTable() {
   const packages = sortBy(unstablePackages, (pkg) => new Date(pkg.startedAt));
   console.log(`### Unstable packages
 
-| Package | Current version | Started at |
-| ------- | --------------- | ---------- |`);
+| No | Package | Current version | Started at |
+| -- | ------- | --------------- | ---------- |`);
+  let i = 0;
   for (const pkg of packages) {
+    i++;
     const date = formatDate(new Date(pkg.startedAt));
-    console.log(`| ${pkg.name} | ${pkg.version} | ${date} |`);
+    console.log(`| ${i} | ${pkg.name} | ${pkg.version} | ${date} |`);
   }
 }
 
@@ -19,14 +21,16 @@ function unstableApiTable() {
   const apis = sortBy(unstableApis, (api) => new Date(api.startedAt));
   console.log(`### Unstable APIs
 
-| Package | Path  | Started at |
-| ------- | ----- | ---------- |`);
+| No | Package | Path  | Started at |
+| -- | ------- | ----- | ---------- |`);
+  let i = 0;
   for (const api of apis) {
+    i++;
     const specifier = api.specifier.split("/");
     const path = specifier.pop();
     const pkg = specifier.join("/");
     const date = formatDate(new Date(api.startedAt));
-    console.log(`| ${pkg} | ${path} | ${date} |`);
+    console.log(`| ${i} | ${pkg} | ${path} | ${date} |`);
   }
 }
 
