@@ -16,7 +16,9 @@
     "jsr:@std/path@^1.0.7": "1.0.8",
     "jsr:@std/path@^1.0.8": "1.0.8",
     "jsr:@std/semver@^1.0.3": "1.0.3",
-    "jsr:@std/streams@0.221": "0.221.0"
+    "jsr:@std/streams@0.221": "0.221.0",
+    "npm:date-age@*": "1.0.2",
+    "npm:dob-to-age@*": "4.0.0"
   },
   "jsr": {
     "@david/dax@0.42.0": {
@@ -86,6 +88,14 @@
       "dependencies": [
         "jsr:@std/io"
       ]
+    }
+  },
+  "npm": {
+    "date-age@1.0.2": {
+      "integrity": "sha512-oiFqRm6f7aIPZSzrX0yTi1PvIofFTDa9dZfJ56cQ0v2wMV4pE+1Om+x1s50IRK3t+T/EeCNaxXHUikZvTcd40w=="
+    },
+    "dob-to-age@4.0.0": {
+      "integrity": "sha512-w/i1Qo5qE1Sw5CP6bs6G3D7vkLKDsmVymvWo33UOClqxYQlBH+tbJZATACMnYNLSxeKraKnMOOTgyt8eFE9hjg=="
     }
   },
   "workspace": {
