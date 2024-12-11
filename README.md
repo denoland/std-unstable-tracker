@@ -1,5 +1,7 @@
 utils for tracking unstable APIs in denoland/std
 
+<!-- Tables Start -->
+
 ### Unstable packages
 
 | No | Package                                       | Current version | Started at | Age at<br/>2024-12-04 |
@@ -73,3 +75,5 @@ utils for tracking unstable APIs in denoland/std
 | 52 | [@std/testing](https://jsr.io/@std/testing)                 | [unstable-stub](https://jsr.io/@std/testing/doc/unstable-stub)                                              | 2024-10-31 | 1 month               |
 | 53 | [@std/csv](https://jsr.io/@std/csv)                         | [unstable-stringify](https://jsr.io/@std/csv/doc/unstable-stringify)                                        | 2024-11-14 | 20 days               |
 | 54 | [@std/async](https://jsr.io/@std/async)                     | [unstable-retry](https://jsr.io/@std/async/doc/unstable-retry)                                              | 2024-11-22 | 12 days               |
+
+<!-- Tables End -->

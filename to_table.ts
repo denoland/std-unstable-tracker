@@ -9,8 +9,9 @@ const age = (d: Date) => dateAge.dobToAge(d);
 const now = new Date();
 
 function unstablePackageTable() {
+  const lines = [];
   const packages = sortBy(unstablePackages, (pkg) => new Date(pkg.startedAt));
-  console.log(`### Unstable packages
+  lines.push(`### Unstable packages
 
 | No | Package | Current version | Started at | Age at<br/>${formatDate(now)} |
 | -- | ------- | --------------- | ---------- | ------------------------- |`);
@@ -21,15 +22,17 @@ function unstablePackageTable() {
     const pkgName = `[${name}](https://jsr.io/${name})`;
     const d = new Date(pkg.startedAt);
     const date = formatDate(d);
-    console.log(
+    lines.push(
       `| ${i} | ${pkgName} | ${pkg.version} | ${date} | ${age(d)} |`,
     );
   }
+  return lines.join("\n");
 }
 
 function unstableApiTable() {
+  const lines = [];
   const apis = sortBy(unstableApis, (api) => new Date(api.startedAt));
-  console.log(`### Unstable APIs
+  lines.push(`### Unstable APIs
 
 | No | Package | Path  | Started at | Age at<br/>${formatDate(now)} |
 | -- | ------- | ----- | ---------- | ------------------------- |`);
@@ -46,11 +49,24 @@ function unstableApiTable() {
     const pathLink = `[${path}](https://jsr.io/${pathUrl})`;
     const d = new Date(api.startedAt);
     const date = formatDate(d);
-    console.log(`| ${i} | ${pkgLink} | ${pathLink} | ${date} | ${age(d)} |`);
+    lines.push(`| ${i} | ${pkgLink} | ${pathLink} | ${date} | ${age(d)} |`);
   }
+  return lines.join("\n");
 }
 
-unstablePackageTable();
-console.log();
-console.log();
-unstableApiTable();
+Deno.writeTextFileSync(
+  "README.md",
+  Deno.readTextFileSync("README.md").replace(
+    /<!-- Tables Start -->[\s\S]*<!-- Tables End -->/,
+    `<!-- Tables Start -->
+
+${unstablePackageTable()}
+
+${unstableApiTable()}
+
+<!-- Tables End -->`,
+  ),
+);
+
+await new Deno.Command(Deno.execPath(), { args: ["fmt", "README.md"] })
+  .output();
