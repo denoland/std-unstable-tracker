@@ -8,7 +8,7 @@
   },
   {
     "name": "@std/cbor",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "exports": {},
     "path": "./cbor",
     "startedAt": "2024-10-10T00:00:00.000Z"
@@ -22,7 +22,7 @@
   },
   {
     "name": "@std/dotenv",
-    "version": "0.225.2",
+    "version": "0.225.3",
     "exports": {},
     "path": "./dotenv",
     "startedAt": "2022-02-23T00:00:00.000Z"
