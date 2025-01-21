@@ -8,14 +8,14 @@ utils for tracking unstable APIs in denoland/std
 | -- | --------------------------------------------- | --------------- | ---------- | --------------------- |
 | 1  | [@std/datetime](https://jsr.io/@std/datetime) | 0.225.2         | 2019-01-03 | 5 years               |
 | 2  | [@std/io](https://jsr.io/@std/io)             | 0.225.0         | 2019-01-12 | 5 years               |
-| 3  | [@std/log](https://jsr.io/@std/log)           | 0.224.11        | 2019-01-12 | 5 years               |
+| 3  | [@std/log](https://jsr.io/@std/log)           | 0.224.12        | 2019-01-12 | 5 years               |
 | 4  | [@std/dotenv](https://jsr.io/@std/dotenv)     | 0.225.3         | 2022-02-23 | 2 years               |
 | 5  | [@std/ini](https://jsr.io/@std/ini)           | 1.0.0-rc.5      | 2023-12-04 | 1 year                |
 | 6  | [@std/webgpu](https://jsr.io/@std/webgpu)     | 0.224.7         | 2023-12-12 | 1 year                |
 | 7  | [@std/cache](https://jsr.io/@std/cache)       | 0.1.3           | 2024-08-09 | 4 months              |
 | 8  | [@std/tar](https://jsr.io/@std/tar)           | 0.1.4           | 2024-09-04 | 3 months              |
 | 9  | [@std/random](https://jsr.io/@std/random)     | 0.1.0           | 2024-09-05 | 3 months              |
-| 10 | [@std/cbor](https://jsr.io/@std/cbor)         | 0.1.3           | 2024-10-10 | 2 months              |
+| 10 | [@std/cbor](https://jsr.io/@std/cbor)         | 0.1.4           | 2024-10-10 | 2 months              |
 
 ### Unstable APIs
 
