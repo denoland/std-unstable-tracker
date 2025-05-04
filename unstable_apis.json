@@ -28,11 +28,39 @@
     "startedAt": "2024-10-21T00:00:00.000Z"
   },
   {
+    "package": "@std/async",
+    "export": "./unstable-wait-for",
+    "specifier": "@std/async/unstable-wait-for",
+    "path": "async/unstable_wait_for.ts",
+    "startedAt": "2025-01-20T00:00:00.000Z"
+  },
+  {
+    "package": "@std/cli",
+    "export": "./unstable-progress-bar",
+    "specifier": "@std/cli/unstable-progress-bar",
+    "path": "cli/unstable_progress_bar.ts",
+    "startedAt": "2025-02-13T00:00:00.000Z"
+  },
+  {
+    "package": "@std/cli",
+    "export": "./unstable-progress-bar-stream",
+    "specifier": "@std/cli/unstable-progress-bar-stream",
+    "path": "cli/unstable_progress_bar_stream.ts",
+    "startedAt": "2025-02-13T00:00:00.000Z"
+  },
+  {
     "package": "@std/cli",
     "export": "./unstable-prompt-select",
     "specifier": "@std/cli/unstable-prompt-select",
     "path": "cli/unstable_prompt_select.ts",
     "startedAt": "2024-11-25T00:00:00.000Z"
+  },
+  {
+    "package": "@std/cli",
+    "export": "./unstable-prompt-multiple-select",
+    "specifier": "@std/cli/unstable-prompt-multiple-select",
+    "path": "cli/unstable_prompt_multiple_select.ts",
+    "startedAt": "2024-12-12T00:00:00.000Z"
   },
   {
     "package": "@std/cli",
@@ -127,6 +155,13 @@
   },
   {
     "package": "@std/encoding",
+    "export": "./unstable-base32",
+    "specifier": "@std/encoding/unstable-base32",
+    "path": "encoding/unstable_base32.ts",
+    "startedAt": "2025-03-10T00:00:00.000Z"
+  },
+  {
+    "package": "@std/encoding",
     "export": "./unstable-base32-stream",
     "specifier": "@std/encoding/unstable-base32-stream",
     "path": "encoding/unstable_base32_stream.ts",
@@ -134,17 +169,10 @@
   },
   {
     "package": "@std/encoding",
-    "export": "./unstable-base32hex",
-    "specifier": "@std/encoding/unstable-base32hex",
-    "path": "encoding/unstable_base32hex.ts",
-    "startedAt": "2024-09-12T00:00:00.000Z"
-  },
-  {
-    "package": "@std/encoding",
-    "export": "./unstable-base32hex-stream",
-    "specifier": "@std/encoding/unstable-base32hex-stream",
-    "path": "encoding/unstable_base32hex_stream.ts",
-    "startedAt": "2024-09-12T00:00:00.000Z"
+    "export": "./unstable-base64",
+    "specifier": "@std/encoding/unstable-base64",
+    "path": "encoding/unstable_base64.ts",
+    "startedAt": "2025-03-04T00:00:00.000Z"
   },
   {
     "package": "@std/encoding",
@@ -155,10 +183,10 @@
   },
   {
     "package": "@std/encoding",
-    "export": "./unstable-base64url-stream",
-    "specifier": "@std/encoding/unstable-base64url-stream",
-    "path": "encoding/unstable_base64url_stream.ts",
-    "startedAt": "2024-09-12T00:00:00.000Z"
+    "export": "./unstable-hex",
+    "specifier": "@std/encoding/unstable-hex",
+    "path": "encoding/unstable_hex.ts",
+    "startedAt": "2025-03-18T00:00:00.000Z"
   },
   {
     "package": "@std/encoding",
@@ -173,6 +201,181 @@
     "specifier": "@std/front-matter/unstable-yaml",
     "path": "front_matter/unstable_yaml.ts",
     "startedAt": "2024-09-12T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-chmod",
+    "specifier": "@std/fs/unstable-chmod",
+    "path": "fs/unstable_chmod.ts",
+    "startedAt": "2025-01-17T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-chown",
+    "specifier": "@std/fs/unstable-chown",
+    "path": "fs/unstable_chown.ts",
+    "startedAt": "2025-04-06T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-copy-file",
+    "specifier": "@std/fs/unstable-copy-file",
+    "path": "fs/unstable_copy_file.ts",
+    "startedAt": "2025-02-21T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-create",
+    "specifier": "@std/fs/unstable-create",
+    "path": "fs/unstable_create.ts",
+    "startedAt": "2025-04-17T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-link",
+    "specifier": "@std/fs/unstable-link",
+    "path": "fs/unstable_link.ts",
+    "startedAt": "2025-01-28T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-lstat",
+    "specifier": "@std/fs/unstable-lstat",
+    "path": "fs/unstable_lstat.ts",
+    "startedAt": "2024-12-19T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-make-temp-dir",
+    "specifier": "@std/fs/unstable-make-temp-dir",
+    "path": "fs/unstable_make_temp_dir.ts",
+    "startedAt": "2025-02-11T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-make-temp-file",
+    "specifier": "@std/fs/unstable-make-temp-file",
+    "path": "fs/unstable_make_temp_file.ts",
+    "startedAt": "2025-03-16T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-mkdir",
+    "specifier": "@std/fs/unstable-mkdir",
+    "path": "fs/unstable_mkdir.ts",
+    "startedAt": "2025-02-20T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-open",
+    "specifier": "@std/fs/unstable-open",
+    "path": "fs/unstable_open.ts",
+    "startedAt": "2025-04-14T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-read-dir",
+    "specifier": "@std/fs/unstable-read-dir",
+    "path": "fs/unstable_read_dir.ts",
+    "startedAt": "2025-01-13T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-read-file",
+    "specifier": "@std/fs/unstable-read-file",
+    "path": "fs/unstable_read_file.ts",
+    "startedAt": "2025-02-11T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-read-link",
+    "specifier": "@std/fs/unstable-read-link",
+    "path": "fs/unstable_read_link.ts",
+    "startedAt": "2025-01-31T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-read-text-file",
+    "specifier": "@std/fs/unstable-read-text-file",
+    "path": "fs/unstable_read_text_file.ts",
+    "startedAt": "2025-02-18T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-real-path",
+    "specifier": "@std/fs/unstable-real-path",
+    "path": "fs/unstable_real_path.ts",
+    "startedAt": "2025-01-27T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-remove",
+    "specifier": "@std/fs/unstable-remove",
+    "path": "fs/unstable_remove.ts",
+    "startedAt": "2025-03-03T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-rename",
+    "specifier": "@std/fs/unstable-rename",
+    "path": "fs/unstable_rename.ts",
+    "startedAt": "2025-02-03T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-stat",
+    "specifier": "@std/fs/unstable-stat",
+    "path": "fs/unstable_stat.ts",
+    "startedAt": "2024-12-16T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-utime",
+    "specifier": "@std/fs/unstable-utime",
+    "path": "fs/unstable_utime.ts",
+    "startedAt": "2025-02-28T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-symlink",
+    "specifier": "@std/fs/unstable-symlink",
+    "path": "fs/unstable_symlink.ts",
+    "startedAt": "2025-01-20T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-truncate",
+    "specifier": "@std/fs/unstable-truncate",
+    "path": "fs/unstable_truncate.ts",
+    "startedAt": "2025-02-18T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-types",
+    "specifier": "@std/fs/unstable-types",
+    "path": "fs/unstable_types.ts",
+    "startedAt": "2024-12-16T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-umask",
+    "specifier": "@std/fs/unstable-umask",
+    "path": "fs/unstable_umask.ts",
+    "startedAt": "2025-02-28T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-write-file",
+    "specifier": "@std/fs/unstable-write-file",
+    "path": "fs/unstable_write_file.ts",
+    "startedAt": "2025-03-04T00:00:00.000Z"
+  },
+  {
+    "package": "@std/fs",
+    "export": "./unstable-write-text-file",
+    "specifier": "@std/fs/unstable-write-text-file",
+    "path": "fs/unstable_write_text_file.ts",
+    "startedAt": "2025-03-07T00:00:00.000Z"
   },
   {
     "package": "@std/html",
@@ -351,10 +554,10 @@
   },
   {
     "package": "@std/testing",
-    "export": "./unstable-types",
-    "specifier": "@std/testing/unstable-types",
-    "path": "testing/unstable_types.ts",
-    "startedAt": "2024-10-29T00:00:00.000Z"
+    "export": "./unstable-bdd",
+    "specifier": "@std/testing/unstable-bdd",
+    "path": "testing/unstable_bdd.ts",
+    "startedAt": "2024-12-20T00:00:00.000Z"
   },
   {
     "package": "@std/testing",
@@ -362,6 +565,27 @@
     "specifier": "@std/testing/unstable-stub",
     "path": "testing/unstable_stub.ts",
     "startedAt": "2024-10-31T00:00:00.000Z"
+  },
+  {
+    "package": "@std/testing",
+    "export": "./unstable-types",
+    "specifier": "@std/testing/unstable-types",
+    "path": "testing/unstable_types.ts",
+    "startedAt": "2024-10-29T00:00:00.000Z"
+  },
+  {
+    "package": "@std/text",
+    "export": "./unstable-dedent",
+    "specifier": "@std/text/unstable-dedent",
+    "path": "text/unstable_dedent.ts",
+    "startedAt": "2025-03-24T00:00:00.000Z"
+  },
+  {
+    "package": "@std/text",
+    "export": "./unstable-reverse",
+    "specifier": "@std/text/unstable-reverse",
+    "path": "text/unstable_reverse.ts",
+    "startedAt": "2025-02-26T00:00:00.000Z"
   },
   {
     "package": "@std/text",
@@ -376,6 +600,13 @@
     "specifier": "@std/text/unstable-to-constant-case",
     "path": "text/unstable_to_constant_case.ts",
     "startedAt": "2024-09-12T00:00:00.000Z"
+  },
+  {
+    "package": "@std/uuid",
+    "export": "./unstable-v6",
+    "specifier": "@std/uuid/unstable-v6",
+    "path": "uuid/unstable_v6.ts",
+    "startedAt": "2025-03-06T00:00:00.000Z"
   },
   {
     "package": "@std/uuid",
