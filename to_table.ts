@@ -34,8 +34,8 @@ function unstableApiTable() {
   const apis = sortBy(unstableApis, (api) => new Date(api.startedAt));
   lines.push(`### Unstable APIs
 
-| No | Package | Path  | Started at | Age at<br/>${formatDate(now)} |
-| -- | ------- | ----- | ---------- | ------------------------- |`);
+| No | Package | Path  | Type | Started at | Age at<br/>${formatDate(now)} |
+| -- | ------- | ----- | ---- | ---------- | ------------------------- |`);
   let i = 0;
   for (const api of apis) {
     i++;
@@ -49,7 +49,10 @@ function unstableApiTable() {
     const pathLink = `[${path}](https://jsr.io/${pathUrl})`;
     const d = new Date(api.startedAt);
     const date = formatDate(d);
-    lines.push(`| ${i} | ${pkgLink} | ${pathLink} | ${date} | ${age(d)} |`);
+    const apiType = api.type === "new" ? "New" : "Fork";
+    lines.push(
+      `| ${i} | ${pkgLink} | ${pathLink} | ${apiType} | ${date} | ${age(d)} |`,
+    );
   }
   return lines.join("\n");
 }

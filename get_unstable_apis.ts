@@ -9,6 +9,7 @@ type UnstableApiProfile = {
   specifier: string;
   path: string;
   startedAt: Date;
+  type: "new" | "fork";
 };
 
 async function getPathStartedDate(path: string): Promise<Date> {
@@ -25,6 +26,8 @@ async function main() {
   for (const config of stables) {
     for (const [name, relPath] of Object.entries(config.exports)) {
       if (name.includes("unstable-")) {
+        const stableName = name.replace("unstable-", "");
+        const isFork = config.exports[stableName] !== undefined;
         const path = join(config.path, relPath);
         unstableApiProfiles.push({
           package: config.name,
@@ -32,6 +35,7 @@ async function main() {
           specifier: posixJoin(config.name, name),
           path,
           startedAt: await getPathStartedDate(path),
+          type: isFork ? "fork" : "new",
         });
       }
     }
