@@ -477,7 +477,7 @@
     "specifier": "@std/net/unstable-get-network-address",
     "path": "net/unstable_get_network_address.ts",
     "startedAt": "2024-09-12T00:00:00.000Z",
-    "type": "fork"
+    "type": "new"
   },
   {
     "package": "@std/path",

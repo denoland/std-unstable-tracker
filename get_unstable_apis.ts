@@ -27,7 +27,11 @@ async function main() {
     for (const [name, relPath] of Object.entries(config.exports)) {
       if (name.includes("unstable-")) {
         const stableName = name.replace("unstable-", "");
-        const isFork = config.exports[stableName] !== undefined;
+        const isFork = config.exports[stableName] !== undefined &&
+          // get-network-address is a special case
+          // it is used by stable file-server
+          stableName !== "./get-network-address";
+        console.log(stableName, isFork);
         const path = join(config.path, relPath);
         unstableApiProfiles.push({
           package: config.name,
